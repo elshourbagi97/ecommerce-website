@@ -1,0 +1,115 @@
+@import "_var";
+@import "_mixin";
+
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary_Font;
+}
+.loginContent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    img{
+        width: fit-content;
+        height: 250px;
+        object-fit: fill;
+        translate: 0px 40px;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .text{
+            outline: none;
+            border: none;
+            border: 2px solid grey;
+            width: 50%;
+            height: 40px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        div{
+           margin-right: 50px;
+           padding: 5px;
+           label{
+            margin-left: 10px;
+            translate: 0px -50px;
+           }
+        }
+        .submit{
+            width: 60%;
+            height: 45px;
+            outline: none;
+            border: none;
+            background-color: $button;
+            border: 2px solid $button;
+            color: $white_Color;
+            font-size: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            &:hover{
+               background-color: $white_Color;
+               color: $button;
+            }
+        }
+    }
+    .last{
+        text-align: center; 
+        img{
+            translate: 0px 5px;
+            width:10%;
+            height: 20%;
+            margin: 0 10px;
+            border: 1.5px solid black;
+            padding: 5px;
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    .loginContent{
+        translate: 0px -60px;
+        img{
+            height: 350px;
+        }
+        p{
+            translate: 0px -30px;
+            font-size: 35px;
+        }
+        div{
+            translate: -30px 0px;
+          
+        }
+        form{
+            margin-top: -30px;
+            .text{
+                width: 20%;
+                height: 40px;
+                font-size: 17px;
+                margin-bottom:10px;
+            }
+            .submit{
+                width: 23%;
+            }
+        }
+        .last{
+            translate: 1px 0px;
+            img{
+                translate: 30px 10px;
+            }
+        }
+    }
+}

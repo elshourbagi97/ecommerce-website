@@ -1,0 +1,670 @@
+@import "_var";
+@import "_mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary_Font;
+}
+
+.homecontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+  .navBar {
+    padding: 0px 20px 0px 0px;
+      position: fixed;
+      z-index: 2;
+      width: 97.5%;
+      height: 60px;
+      background-color: $white_Color;
+      top: 0px;
+      left: 0px;
+  }
+  .div1 {
+    margin-top: 10%;
+    @include dimensions;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    .imgBG {
+      max-width: 100%;
+      background-image: url("./backgroud.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .innerDiv1 {
+        width: 70%;
+        margin: 170px;
+        background-color: rgb(165, 195, 227);
+        border-radius: 5px;
+        padding: 30px;
+        translate: -50px -140px;
+        .para1 {
+          font-size: 14px;
+          color: $secondary_Color;
+          font-weight: bold;
+          translate: -10px -10px;
+        }
+        h2 {
+          color: $primary_Color;
+          font-size: 26px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+        button {
+          outline: none;
+          border: none;
+          font-size: 16px;
+          font-weight: 500;
+          border: 3px solid $primary_Color;
+          background-color: $primary_Color;
+          color: white;
+          width: 40%;
+          translate: 0px 10px;
+          padding: 10px 2px;
+          border-radius: 20px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.83);
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            border: 3px solid $primary_Color;
+            color: $primary_Color;
+          }
+        }
+      }
+    }
+    .shipping {
+      background-color: #c5cde7;
+      translate: 0px -33.5px;
+      padding: 10px;
+      @include dimensions;
+      display: flex;
+      justify-content: space-between;
+      .track {
+        display: flex;
+        i {
+          font-size: 20px;
+        }
+        div {
+          margin-left: 4px;
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .lorem {
+            font-weight: 400;
+            font-size: 12px;
+          }
+        }
+      }
+      .hr24 {
+        display: flex;
+        .h24 {
+          width: 30px;
+          height: 30px;
+        }
+        div {
+          margin-left: 4px;
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .lorem {
+            font-weight: 400;
+            font-size: 12px;
+          }
+        }
+      }
+      .shield {
+        display: flex;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        div {
+          margin-left: 4px;
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .lorem {
+            font-weight: 400;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .div2 {
+    @include dimensions;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .images2 {
+      width: 95%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+      margin: 0px 20px 50px 20px;
+
+      .img1,
+      .img2,
+      .img3 {
+        border: 3px solid transparent;
+        width: 150px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        &:hover {
+          border: 3px solid $primary_Color;
+        }
+      }
+      .img1 {
+        background-image: url("./2.png");
+        translate: 0px 30px;
+        border-top-left-radius: 47px;
+      }
+      .img2 {
+        background-image: url("./1.png");
+      }
+      .img3 {
+        background-image: url("./3.png");
+        translate: 0px 30px;
+        border-bottom-right-radius: 47px;
+      }
+    }
+  }
+  .div3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    background-color: #a7b2d6;
+    padding: 20px 5px;
+    .left3 {
+      height: 100%;
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      margin-left: 25px;
+      h2 {
+        color: #000000;
+        font-size: 24px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      p {
+        color: #323232;
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      button {
+        outline: none;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        border: 3px solid $primary_Color;
+        background-color: $primary_Color;
+        color: white;
+        width: 60%;
+        padding: 10px 2px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.83);
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          border: 3px solid $primary_Color;
+          color: $primary_Color;
+        }
+      }
+    }
+    .right3 {
+      width: 50%;
+      margin-left: 50px;
+      height: 100%;
+      background-image: url("./right3.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-top-left-radius: 40px;
+    }
+  }
+  .div4 {
+    @include dimensions;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .images4 {
+      width: 95%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+      margin: 0px 20px 50px 20px;
+
+      .img41,
+      .img42,
+      .img43 {
+        border: 3px solid transparent;
+        width: 150px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        &:hover {
+          border: 3px solid $primary_Color;
+        }
+      }
+      .img41 {
+        background-image: url("./img41.png");
+        position: relative;
+        transition: all 0.8s;
+        &:hover{
+          translate: 0px 30px;
+          &::after{
+            content:"Dining";
+          margin-left: 35px;
+          font-size: 18px;
+          font-weight: 500;
+          color:$primary_Color;
+         position: absolute;
+         top: -30px;
+          }
+        }
+      }
+      .img42 {
+        background-image: url("./img42.png");
+        position: relative;
+        transition: all 0.8s;
+        &:hover{
+          translate: 0px 30px;
+          &::after{
+            content:"Living";
+          margin-left: 35px;
+          font-size: 18px;
+          font-weight: 500;
+          color:$primary_Color;
+         position: absolute;
+         top: -30px;
+          }
+        }
+      }
+      .img43 {
+        background-image: url("./img43.png");
+        position: relative;
+        transition: all 0.8s;
+        &:hover{
+          translate: 0px 30px;
+          &::after{
+            content:"Bedroom";
+          margin-left: 35px;
+          font-size: 18px;
+          font-weight: 500;
+          color:$primary_Color;
+         position: absolute;
+         top: -30px;
+          }
+        }
+      }
+    }
+  }
+  .div5{
+    @include dimensions;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .images5 {
+      width: 95%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+      margin: 0px 20px 50px 20px;
+
+      .img51,
+      .img52,
+      .img53 {
+        border: 3px solid transparent;
+        width: 150px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        &:hover {
+          border: 3px solid $primary_Color;
+        }
+      }
+      .img51 {
+        background-image: url("./img51.png");
+        transition: all 0.8s;
+        position: relative;
+        &:hover{
+          &::before{
+            content: "Purchase Securely";
+            margin-left: 35px;
+            color: $primary_Color;
+            position: absolute;
+            bottom: -42px;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+      .img52 {
+        background-image: url("./img52.png");
+        transition: all 0.8s;
+        position: relative;
+        &:hover{
+          &::before{
+            content: "Ships From Warehouse";
+            margin-left: 25px;
+            color: $primary_Color;
+            position: absolute;
+            bottom: -42px;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+      .img53 {
+        background-image: url("./img53.png");
+        transition: all 0.8s;
+        position: relative;
+        &:hover{
+          &::before{
+            content: "Style Your Room";
+            margin-left: 8px;
+            color: $primary_Color;
+            position: absolute;
+            bottom: -30px;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .homecontainer {
+    .navBar {
+      height: 80px;
+    }
+    .div1 {
+      margin-top: 6%;
+      .imgBG {
+        height: 100%;
+        background-size: 1424px 700px;
+        .innerDiv1 {
+          width: 40%;
+          translate: 680px -150px;
+          .para1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+          h2 {
+            font-size: 34px;
+            margin-bottom: 5px;
+          }
+          p {
+            width: 80%;
+            font-size: 16px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+          }
+          button {
+            font-size: 18px;
+          }
+        }
+      }
+      .shipping {
+        width: 94.4%;
+        margin-left: 41.5px;
+        .track {
+          margin-left: 20px;
+          i {
+            font-size: 35px;
+          }
+          div {
+            margin-left: 10px;
+            p {
+              font-size: 16px;
+            }
+            .lorem {
+              font-size: 13px;
+            }
+          }
+        }
+        .hr24 {
+          .h24 {
+            width: 40px;
+            height: 40px;
+          }
+          div {
+            margin-left: 10px;
+            p {
+              font-size: 16px;
+            }
+            .lorem {
+              font-size: 13px;
+            }
+          }
+        }
+        .shield {
+          margin-right: 20px;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          div {
+            margin-left: 10px;
+            p {
+              font-size: 16px;
+            }
+            .lorem {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .div2 {
+      margin-top: 50px;
+      h2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      p {
+        word-spacing: 0.5px;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      .images2 {
+        width: 70%;
+        .img1,
+        .img2,
+        .img3 {
+          width: 250px;
+          height: 300px;
+        }
+      }
+    }
+    .div3 {
+      margin-top: 50px;
+      width: 80%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      align-self: center;
+      justify-content: space-between;
+      .left3 {
+        translate: 90px 0px;
+        justify-content: space-evenly;
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 18px;
+          translate: 0px -30px;
+        }
+        button {
+          width: 40%;
+          font-size: 16px;
+          translate: 0px -60px;
+        }
+      }
+      .right3 {
+        width: 80%;
+        height: 350px;
+        translate: 250px 0px;
+      }
+    }
+    .div4{
+      margin-top: 20px;
+      h2{
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      p{
+        word-spacing: 0.5px;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      .images4 {
+        width: 70%;
+        .img41,
+        .img42,
+        .img43 {
+          width: 250px;
+          height: 300px;
+        }
+        .img41{
+          &:hover{
+            &::after{
+              content: "Dining";
+              margin-left: 85px;
+              font-size:20px ;
+              top: -35px;
+            }
+          }
+        }
+        .img42{
+          &:hover{
+            &::after{
+              content: "Living";
+              margin-left: 85px;
+              font-size:20px ;
+              top: -35px;
+            }
+          }
+        } .img43{
+          &:hover{
+            &::after{
+              content: "Bedroom";
+              margin-left: 80px;
+              font-size:20px ;
+              top: -35px;
+            }
+          }
+        }
+      }
+      
+    }
+    .div5{
+      margin-top: 50px;
+      h2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      p {
+        word-spacing: 0.5px;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      .images5 {
+        width: 70%;
+        .img51,
+        .img52,
+        .img53{
+          width: 250px;
+          height: 300px;
+        }
+        .img51{
+          &:hover{
+            &::before{
+              content: "Purchase Securely";
+              margin-left: 50px;
+              font-size: 16px;
+            }
+          }
+        }
+        .img52{
+          &:hover{
+            &::before{
+              content: "Ships From Warehouse";
+              margin-left: 30px;
+              font-size: 16px;
+            }
+          }
+        }
+        .img53{
+          &:hover{
+            &::before{
+              content: "Style Your Room";
+              margin-left: 50px;
+              font-size: 16px;
+              bottom: -40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

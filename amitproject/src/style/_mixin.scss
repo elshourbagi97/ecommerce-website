@@ -1,0 +1,13 @@
+@mixin dimensions{
+    width: 100%;
+    height: 100%;
+}
+@mixin Centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin border_None{
+    outline: none;
+    border: none;
+}

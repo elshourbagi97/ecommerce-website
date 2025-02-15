@@ -1,0 +1,140 @@
+{
+    "products": [
+
+            {
+                "id": 1,
+                "title": "Modern Sofa",
+                "price": "$899.99",
+                "description": "A sleek and comfortable modern sofa, perfect for any living room.",
+                "image": "https://i.pinimg.com/1200x/5c/fc/0f/5cfc0fe5e47981d822194d5494a5a859.jpg",
+                "rating": 3.7,
+                "category": "Living Room"
+            },
+            {
+                "id": 2,
+                "title": "Dining Table Set",
+                "price": "$650.00",
+                "description": "A stylish wooden dining table set that seats six people.",
+                "image": "https://i.pinimg.com/1200x/7b/42/e6/7b42e6befca456f79f3401c11b4f5fdc.jpg",
+                "rating": 2.5,
+                "category": "Dining Room"
+            },
+            {
+                "id": 3,
+                "title": "Classic Coffee Table",
+                "price": "$250.00",
+                "description": "A timeless wooden coffee table with a modern design.",
+                "image": "https://i.pinimg.com/1200x/b6/cd/a9/b6cda9dfc854fc892d71b25125f14e7c.jpg",
+                "rating": 4,
+                "category": "Living Room"
+            },
+            {
+                "id": 4,
+                "title": "Ergonomic Office Chair",
+                "price": "$180.00",
+                "description": "A comfortable office chair that supports long hours of work.",
+                "image": "https://i.pinimg.com/1200x/85/c3/8d/85c38d4940dbc40d0affd34d68a73e1c.jpg",
+                "rating": 4.5,
+                "category": "Office"
+            },
+            {
+                "id": 5,
+                "title": "Wooden Bookshelf",
+                "price": "$350.00",
+                "description": "A spacious bookshelf made from solid wood, perfect for organizing books.",
+                "image": "https://i.pinimg.com/1200x/e5/bc/75/e5bc7563f5447747b042ee8a1ffe4845.jpg",
+                "rating": 4.6,
+                "category": "Living Room"
+            },
+            {
+                "id": 6,
+                "title": "Sleek Sideboard",
+                "price": "$400.00",
+                "description": "A modern sideboard for storing dishes and décor.",
+                "image": "https://i.pinimg.com/1200x/39/9c/34/399c342e04365566c115f47118c8fa06.jpg",
+                "rating": 4.4,
+                "category": "Dining Room"
+            },
+            {
+                "id": 7,
+                "title": "Industrial Lamp",
+                "price": "$120.00",
+                "description": "A stylish industrial lamp that adds character to any room.",
+                "image": "https://i.pinimg.com/1200x/3e/c5/8f/3ec58fd41bb26d66150e8b63c8b03d0d.jpg",
+                "rating": 4.7,
+                "category": "Lighting"
+            },
+            {
+                "id": 8,
+                "title": "King Bed Frame",
+                "price": "$550.00",
+                "description": "A luxurious king-size bed frame for a restful night's sleep.",
+                "image": "https://i.pinimg.com/1200x/cd/6b/c0/cd6bc0fb8bda6ef584c04d7425a37acb.jpg",
+                "rating": 4.9,
+                "category": "Bedroom"
+            },
+            {
+                "id": 9,
+                "title": "Minimalist Shelf",
+                "price": "$100.00",
+                "description": "A sleek and minimalist wall shelf for your living room or kitchen.",
+                "image": "https://i.pinimg.com/1200x/cd/04/ec/cd04ec8ba5e7c3021ac7068128196406.jpg",
+                "rating": 4.5,
+                "category": "Living Room"
+            },
+            {
+                "id": 10,
+                "title": "Modern Recliner",
+                "price": "$700.00",
+                "description": "A modern recliner chair with built-in footrest and massaging function.",
+                "image": "https://i.pinimg.com/1200x/71/68/89/7168890c55e07845d520684e1f9e775d.jpg",
+                "rating": 5,
+                "category": "Living Room"
+            },
+            {
+                "id": 11,
+                "title": "Chest of Drawers",
+                "price": "$450.00",
+                "description": "A vintage-style chest of drawers with multiple compartments.",
+                "image": "https://i.pinimg.com/1200x/bf/05/55/bf0555d710a20d55ac41fe930dacc96f.jpg",
+                "rating": 4.4,
+                "category": "Bedroom"
+            },
+            {
+                "id": 12,
+                "title": "Swivel Desk Chair",
+                "price": "$180.00",
+                "description": "A comfortable swivel desk chair for ergonomic support.",
+                "image": "https://i.pinimg.com/1200x/09/e5/ed/09e5ed84c11e5c04e32ef376a02f10f0.jpg",
+                "rating": 4.6,
+                "category": "Office"
+            },
+            {
+                "id": 13,
+                "title": "Storage Ottoman",
+                "price": "$150.00",
+                "description": "A multifunctional ottoman with hidden storage space.",
+                "image": "https://i.pinimg.com/1200x/6d/42/63/6d4263113e785e668ffecea32370dfb5.jpg",
+                "rating": 4.5,
+                "category": "Living Room"
+            },
+            {
+                "id": 14,
+                "title": "Wicker Lounge Chair",
+                "price": "$220.00",
+                "description": "A relaxing wicker lounge chair for outdoor spaces.",
+                "image": "https://i.pinimg.com/1200x/0e/f7/a7/0ef7a7ef427e6a19c2f98165c40fda7d.jpg",
+                "rating": 4.7,
+                "category": "Outdoor"
+            },
+            {
+                "id": 15,
+                "title": "Wall Mirror",
+                "price": "$120.00",
+                "description": "A decorative wall mirror that adds depth to your room.",
+                "image": "https://i.pinimg.com/1200x/c2/8f/4b/c28f4b8f7013d8ca315c160dbbb571ac.jpg",
+                "rating": 4.8,
+                "category": "Home Decor"
+            }
+        ]
+  }

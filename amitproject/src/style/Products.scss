@@ -1,0 +1,118 @@
+@import "_var";
+@import "_mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary_Font;
+}
+.ProductContent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-x: hidden ;
+    position: relative;
+    .navBar{
+        position: fixed;
+        z-index: 2;
+        width: 97.5%;
+        height: 60px;
+        background-color: $white_Color;
+        top: 0px;
+        left: 0px;
+    }
+    .header{
+        width: 100%;
+      margin-top: 10%;
+        min-height: 25vh;
+        margin-bottom: 10px;
+        text-align: center;
+        background-image: url("./backgroud.png");
+        background-size:cover ;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.4);
+            filter:blur(4px);
+            z-index: -1;
+        }
+        h3{
+           color: rgb(0, 0, 0);
+           position: absolute;
+           font-size: 26px;
+           top: 25%;
+           left: 38%;
+           z-index: 1;
+        }
+        ul{
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            z-index: 1;
+            color: black;
+            li{
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 5px;
+                font-size: 14px;
+                font-weight: 500;
+                a{
+                    cursor: pointer;
+                    border-bottom: 2px solid transparent;
+                    &:hover{
+                        color: blue;
+                        border-bottom: 2px solid blue;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    
+}
+@media screen and (min-width: 600px) {
+    .ProductContent {
+        justify-content: space-between;
+      .navBar {
+     width: 99%;
+     height: 80px;
+      }
+      .header{
+        margin-top: 6%;
+        height: 35%;
+        box-shadow: 5px 2px 5px rgb(167, 167, 167);
+        h3{
+            left: 44.5%;
+            font-size: 35px;
+            letter-spacing: 1.3px;
+        }
+        ul{
+            left: 46.5%;
+            top: 50%;
+            li{
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+      }
+      .main{
+        margin: 10px 0 30px;
+      }
+    }  
+}  
