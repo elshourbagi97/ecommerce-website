@@ -17,7 +17,7 @@ A modern, responsive eCommerce web application built with React. This project fe
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, HTML5, CSS3
+- **Frontend**: React, HTML5, CSS3,SCSS,BOOTSTRAP
 - **State Management**: React Hooks
 - **Styling**: Custom CSS & Flexbox/Grid
 
